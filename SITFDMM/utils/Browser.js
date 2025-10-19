@@ -43,6 +43,9 @@ export class BrowserSingleton {
     async launchPage(){
         let browser=await this.browser
         let page=await browser.newPage()
+        page.setDefaultTimeout(60000)
+        
+        // page.getByRole('textbox')
         return page ;
     }
     async getPage(){

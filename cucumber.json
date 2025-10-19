@@ -4,13 +4,15 @@
 
         "paths": [
 
-            "./OrangeHrM/features"
+            "./SITFDMM/features/ccm/*feature",
+            "./SITFDMM/features/sts/*feature"
 
         ],
 
         "require": [
 
-            "./OrangeHrM/steps/*.js"
+            "./SITFDMM/steps/ccm/*.js",
+            "./SITFDMM/steps/sts/*.js"
 
         ]
     }

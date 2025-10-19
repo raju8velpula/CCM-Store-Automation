@@ -7,9 +7,9 @@ export class LoginPage extends ElementMethods{
      constructor(){
         super(new BrowserSingleton().getPage())
         this.util=new UtilityLibrery()
-        this.userNameTxtLoc={locatorType:'css', value:'input[name="username"]'}
-        this.passwordTxtLoc={locatorType:'css', value:'input[name="password"]'}
-        this.loginBtnLoc={locatorType:'css', value:'button[type="submit"]'}
+        this.userNameTxtLoc={locatorType:'byRole',role:'textbox', name:'User Name'}
+        this.passwordTxtLoc={locatorType:'byRole',role:'textbox', name:'Password'}
+        this.loginBtnLoc={locatorType:'byRole',role:'link', name:'Login'}
      }
 
      async loginToApplication(){

@@ -41,9 +41,9 @@ export class UtilityLibrery{
     return properties.get(key);
 }
 
-    async launchApplication(){
+    async launchApplication(app){
         let page=await new BrowserSingleton().getPage();
-        await page.goto(await this.getProperty('appURL'),{ timeout: 100000, waitUntil: 'load' })
+        await page.goto(await this.getProperty(app+'_url'),{ timeout: 100000, waitUntil: 'load' })
     }
 }
 

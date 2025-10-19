@@ -1,6 +1,7 @@
 {
   "cucumberautocomplete.steps": [
-    "OrangeHrM/steps/*.js"
+    "SITFDMM/steps/*.js",
+     "SITFDMM/steps/ccm/*.js"
   ]
   // "cucumberautocomplete.syncfeatures": "OrangeHrM/features/*.feature",
   // "cucumberautocomplete.strictGherkinCompletion": true,
