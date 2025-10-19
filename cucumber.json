@@ -1,0 +1,17 @@
+{
+
+    "default": {
+
+        "paths": [
+
+            "./OrangeHrM/features"
+
+        ],
+
+        "require": [
+
+            "./OrangeHrM/steps/*.js"
+
+        ]
+    }
+}

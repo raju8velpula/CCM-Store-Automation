@@ -1,0 +1,12 @@
+{
+  "cucumberautocomplete.steps": [
+    "OrangeHrM/steps/*.js"
+  ]
+  // "cucumberautocomplete.syncfeatures": "OrangeHrM/features/*.feature",
+  // "cucumberautocomplete.strictGherkinCompletion": true,
+  // "cucumberautocomplete.smartSnippets": true,
+  // "cucumberautocomplete.gherkinDefinitionPart": "(Given|When|Then)\\(",
+  // "editor.quickSuggestions": {
+  //   "strings": true
+  // }
+}
