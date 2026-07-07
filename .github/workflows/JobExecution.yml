@@ -22,5 +22,10 @@ on:
         description: Environment
         type: environment
         required: true
+run-name: "Tag: ${{inputs.tag}}, Build: ${{inputs.build}}, run: ${{inputs.run}}, evn: ${{inputs.env}}"
+jobs:
+  run-test:
+    name: Test Case - {{inputs.tag}}
     
+  
   
