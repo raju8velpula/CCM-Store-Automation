@@ -12,11 +12,15 @@ on:
         description: build name
         default: 1.41.7
         required: false
-        type: environment
+        type: string
       run:
         description: Failed Run
         type: boolean
         default: true
+        required: true
+      env:
+        description: Environment
+        type: environment
         required: true
     
   
