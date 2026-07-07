@@ -7,5 +7,16 @@ on:
         description: Tag Name
         default: Teju the princess
         required: true
+        type: string
+      build:
+        description: build name
+        default: 1.41.7
+        required: false
+        type: string
+      run:
+        description: Failed Run
         type: boolean
+        default: true
+        required: true
+    
   
