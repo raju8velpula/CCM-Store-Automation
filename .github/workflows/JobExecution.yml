@@ -12,7 +12,7 @@ on:
         description: build name
         default: 1.41.7
         required: false
-        type: string
+        type: environment
       run:
         description: Failed Run
         type: boolean
