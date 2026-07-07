@@ -5,4 +5,7 @@ on:
     inputs:
       tag:
         description: Tag Name
+        default: Teju the princess
+        required: true
+        type: boolean
   
