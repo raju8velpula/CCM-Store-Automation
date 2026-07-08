@@ -30,7 +30,10 @@ on:
 run-name: "Tag: ${{inputs.tag}}, Build: ${{inputs.build}}, run: ${{inputs.run}}, evn: ${{inputs.env}}"
 jobs:
   raju-execution:
+    timeout-minutes: 7200
     runs-on: ubuntu-latest
+    env:
+      LOCAL_PATH: /tmp/reports
     steps:
       - uses: actions/checkout@v5
         with:
