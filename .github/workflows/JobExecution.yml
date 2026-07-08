@@ -8,6 +8,11 @@ on:
         default: Teju the princess
         required: true
         type: string
+      BRANCH:
+        type: string
+        description: 'enter branch name'
+        required: false
+        default: "master"
       build:
         description: build name
         default: 1.41.7
