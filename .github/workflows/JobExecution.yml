@@ -32,10 +32,21 @@ jobs:
   raju-execution:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses:  actions/checkout@v5
+      - uses: actions/checkout@v5
         with:
-          ref: ${{ inputs.BRANCH }}
+            ref: ${{ inputs.BRANCH }}  
+      - name: Print Inputs
+        run: |
+          echo "Tag=${{ inputs.tag }}"
+          echo "Build=${{ inputs.build }}"
+          echo "Run=${{ inputs.run }}"
+          echo "Environment=${{ inputs.env }}"
+
+      - name: Run Automation
+        run: |
+          mvn test
+      
+
     
   
   
