@@ -24,8 +24,13 @@ on:
         required: true
 run-name: "Tag: ${{inputs.tag}}, Build: ${{inputs.build}}, run: ${{inputs.run}}, evn: ${{inputs.env}}"
 jobs:
-  run-test:
-    name: Test Case - {{inputs.tag}}
+  raju-execution:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses:  actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.BRANCH }}
     
   
   
